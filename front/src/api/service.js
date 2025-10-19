@@ -3,7 +3,7 @@ import request from "@/utils/request";
 // 1、获取企业信息回显数据
 export function enterpriseDataAPI(obj) {
   return request({
-    url: `/api/policy/enterprisedata`,
+    url: `/policy/enterprisedata`,
     method: "GET",
     params: obj,
   });
@@ -13,7 +13,7 @@ export function enterpriseDataAPI(obj) {
 
 export function entNatureDataAPI() {
   return request({
-    url: `/api/policy/entNatureData`,
+    url: `/policy/entNatureData`,
     method: "GET",
   });
 }
@@ -22,7 +22,7 @@ export function entNatureDataAPI() {
 
 export function postEnterpriseDataAPI(obj) {
   return request({
-    url: `/api/policy/enterprisedata`,
+    url: `/policy/enterprisedata`,
     method: "POST",
     data: obj,
   });
@@ -31,7 +31,7 @@ export function postEnterpriseDataAPI(obj) {
 //   4.获取企业年报数据
 export function enterpriseReportAPI(obj) {
   return request({
-    url: `/api/policy/enterprisereport`,
+    url: `/policy/enterprisereport`,
     method: "GET",
     params: obj,
   });
@@ -40,7 +40,7 @@ export function enterpriseReportAPI(obj) {
 //   5.提交企业年报数据
 export function postEnterpriseReportAPI(obj) {
   return request({
-    url: `/api/policy/putenterprisereport`,
+    url: `/policy/putenterprisereport`,
     method: "POST",
     params: obj,
   });
@@ -49,7 +49,7 @@ export function postEnterpriseReportAPI(obj) {
 //   6.获取政企匹配数据（根据企业所在地区）
 export function goventMatchAPI(obj) {
   return request({
-    url: `/api/policy/goventmatchdata`,
+    url: `/policy/goventmatchdata`,
     method: "GET",
     params: obj,
   });
@@ -58,14 +58,14 @@ export function goventMatchAPI(obj) {
 //  7.获取政策详情数据
 export function policyDataAPI(policyid) {
   return request({
-    url: `/api/policy/policydata/${policyid}`,
+    url: `/policy/policydata/${policyid}`,
     method: "GET",
   });
 }
 //   8.获取政策模型数据
 export function policyModelAPI(obj) {
   return request({
-    url: `/api/policy/policymodel`,
+    url: `/policy/policymodel`,
     method: "GET",
     params: obj,
   });
@@ -74,7 +74,7 @@ export function policyModelAPI(obj) {
 //   9.获取模型材料数量
 export function caiLiaoNumberAPI(obj) {
   return request({
-    url: `/api/policy/cailiaonumber`,
+    url: `/policy/cailiaonumber`,
     method: "GET",
     params: obj,
   });
@@ -83,7 +83,7 @@ export function caiLiaoNumberAPI(obj) {
 //   10.获取材料详情数据
 export function caiLiaoAPI(obj) {
   return request({
-    url: `/api/policy/cailiao`,
+    url: `/policy/cailiao`,
     method: "GET",
     params: obj,
   });
@@ -92,7 +92,7 @@ export function caiLiaoAPI(obj) {
 //   10.获取模型提交材料的信息,一对一提交材料的信息获取
 export function caiLiaoOtoOAPI(obj) {
   return request({
-    url: `/api/policy/getmodelmaterialinfo`,
+    url: `/policy/getmodelmaterialinfo`,
     method: "GET",
     params: obj,
   });
@@ -101,7 +101,7 @@ export function caiLiaoOtoOAPI(obj) {
 //   11.获取上传材料清单数据
 export function caiLiaoQingDanAPI(obj) {
   return request({
-    url: `/api/policy/cailiaoqingdan`,
+    url: `/policy/cailiaoqingdan`,
     method: "GET",
     params: obj,
   });
@@ -110,7 +110,7 @@ export function caiLiaoQingDanAPI(obj) {
 //   12.上传材料接口
 export function caiLiaoUpLoadAPI(obj) {
   return request({
-    url: `/api/policy/materialupload`,
+    url: `/policy/materialupload`,
     method: "POST",
     data: obj,
   });
@@ -119,7 +119,7 @@ export function caiLiaoUpLoadAPI(obj) {
 //   13.删除材料接口
 export function deleteCaiLiaoAPI(materialId) {
   return request({
-    url: `/api/policy/deletematerial/${materialId}`,
+    url: `/policy/deletematerial/${materialId}`,
     method: "DELETE",
   });
 }
@@ -127,7 +127,7 @@ export function deleteCaiLiaoAPI(materialId) {
 //   14.查看审核信息接口
 export function sheHeInfoAPI(obj) {
   return request({
-    url: `/api/policy/sheheinfo`,
+    url: `/policy/sheheinfo`,
     method: "GET",
     params: obj,
   });
@@ -137,7 +137,7 @@ export function sheHeInfoAPI(obj) {
 
 export function shenBaoProgressAPI(obj) {
   return request({
-    url: `/api/policy/shenbaoprogress`,
+    url: `/policy/shenbaoprogress`,
     method: "GET",
     params: obj,
   });
@@ -145,7 +145,7 @@ export function shenBaoProgressAPI(obj) {
 
 export function policyModelUnqualified(obj) {
   return request({
-    url: "/api/policy/policyModelUnqualified",
+    url: "/policy/policyModelUnqualified",
     method: "get",
     params: obj,
   });

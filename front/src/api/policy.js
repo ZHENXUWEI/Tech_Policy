@@ -1,20 +1,20 @@
 import request from '@/utils/request'
 export function policystatusAPI() {
     return request({
-      url: `/api/policy/policystatus`,
+      url: `/policy/policystatus`,
     })
   }
 
   export function policyclassinfoAPI() {
     return request({
-      url: `/api/policy/policyclassinfo`,
+      url: `/policy/policyclassinfo`,
     })
   }
 
 // 精准推荐  根据用户喜好获取政策
 export function policyUserHobby(id) {
   return request({
-    url: `/api/policy/policyPush?companyId=${id}`,
+    url: `/policy/policyPush?companyId=${id}`,
     method: "get"
   })
 }
@@ -22,13 +22,13 @@ export function policyUserHobby(id) {
   export function policyhobbyAPI({ obj, method='GET' }) {    
     if (method=='GET') {
       return request({
-        url: `/api/policy/policyhobby`,
+        url: `/policy/policyhobby`,
         method:'GET',
         params: obj
       })
     }else {
       return request({
-        url: `/api/policy/policyhobby`,
+        url: `/policy/policyhobby`,
         method:'POST',
         data: obj
       })
@@ -36,7 +36,7 @@ export function policyUserHobby(id) {
   }
   export function policyeffectiveAPI(obj){
     return request({
-      url: `api/policy/policyinfo`,
+      url: `/policy/policyinfo`,
       method:'POST',
       data: obj
     })
@@ -77,7 +77,7 @@ export function policyUserHobby(id) {
     // }
     console.log(obj)
     return request({
-      url: `/api/policy/policyinfo`,
+      url: `/policy/policyinfo`,
       headers: {
         'Content-Type':'application/json'
       },
@@ -89,7 +89,7 @@ export function policyUserHobby(id) {
 
   export function policyPushAPI(Id){
     return request({
-      url: `/api/policy/policyPush?companyId=${Id}`,
+      url: `/policy/policyPush?companyId=${Id}`,
       method: 'GET',
       // params: companyId
     })
@@ -98,7 +98,7 @@ export function policyUserHobby(id) {
 
   export function policyinfoPAPI(type,timePeriod) {
     return request({
-      url: `/api/policy/policyinfo`,
+      url: `/policy/policyinfo`,
       params:{
         type,
         timePeriod
@@ -109,33 +109,33 @@ export function policyUserHobby(id) {
 
   export function policyinfoDetailPAPI(id) {
     return request({
-      url:`/api/policy/getpolicydetail/${id}`,
+      url:`/policy/getpolicydetail/${id}`,
      method:"get"
     })
   }
 
   export function policyNumberAPI(id) {
     return request({
-      url:`/api/policy/vistiedNumber/${id}`,
+      url:`/policy/vistiedNumber/${id}`,
      method:"get"
     })
   }
 
   export function policyVisitNAPI() {
     return request({
-      url: `/api/policy/userVisitN`,
+      url: `/policy/userVisitN`,
     })
   }
 
   export function policyMatchNAPI() {
     return request({
-      url: `/api/policy/matchN`,
+      url: `/policy/matchN`,
     })
   }
 
 
   export function policyMatchListPAPI() {
     return request({
-      url: `/api/policy/policyMatchList`,
+      url: `/policy/policyMatchList`,
     })
   }

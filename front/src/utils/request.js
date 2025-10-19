@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getCookie } from "./cookie";
 const service = axios.create({
-  baseURL: "/api",
+  baseURL: "http://localhost:8080",
   // baseURL: "https://zcfw.hzsteel.com/api",
   timeout: 15000, //超时15秒
 });
